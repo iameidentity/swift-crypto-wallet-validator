@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+        </array>
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Medium.ttf">
+            <string>Roboto-Medium</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CrytoWalletValidator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="ppR-cd-yYR">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="368"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ppR-cd-yYR" secondAttribute="height" multiplier="207:142" constant="-122.45070422535218" id="p9z-Db-AmJ"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ItR-LD-53b">
+                                <rect key="frame" x="16" y="247" width="382" height="473"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose Network" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oZq-Wa-mSP" customClass="HoshiTextField" customModule="CrytoWalletValidator" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="112" width="334" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="Fjg-1p-bfR"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.36470588240000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.32549019610000002" green="0.79215686269999996" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseNetworkAction:" destination="BYZ-38-t0r" eventType="touchDown" id="LLk-Ih-hPr"/>
+                                        </connections>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Choose crypto currency" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WLb-HF-BrW" customClass="HoshiTextField" customModule="CrytoWalletValidator" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="24" width="334" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="nkO-lQ-UdG"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.19607843137254902" green="0.19607843137254902" blue="0.36470588235294116" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.32549019610000002" green="0.79215686269999996" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="chooseCryptoAction:" destination="BYZ-38-t0r" eventType="touchDown" id="Qqc-To-V5P"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC7-T3-bSu">
+                                        <rect key="frame" x="24" y="391" width="334" height="60"/>
+                                        <color key="backgroundColor" red="0.0" green="0.82352941176470584" blue="0.55686274509803924" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="qJf-1J-aKR"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Roboto-Medium" family="Roboto" pointSize="20"/>
+                                        <state key="normal" title="VALIDATE"/>
+                                        <connections>
+                                            <action selector="validateAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EL8-mu-kRa"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter address" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qMe-1i-4Xw" customClass="HoshiTextField" customModule="CrytoWalletValidator" customModuleProvider="target">
+                                        <rect key="frame" x="24" y="200" width="334" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="64" id="FrF-0n-vSg"/>
+                                        </constraints>
+                                        <color key="textColor" red="0.1960784314" green="0.1960784314" blue="0.36470588240000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderActiveColor">
+                                                <color key="value" red="0.32549019610000002" green="0.79215686269999996" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderInactiveColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                <color key="value" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bC7-T3-bSu" firstAttribute="centerX" secondItem="ItR-LD-53b" secondAttribute="centerX" id="Dj9-Px-zep"/>
+                                    <constraint firstItem="qMe-1i-4Xw" firstAttribute="top" secondItem="oZq-Wa-mSP" secondAttribute="bottom" constant="24" id="JFJ-xW-DCB"/>
+                                    <constraint firstAttribute="trailing" secondItem="qMe-1i-4Xw" secondAttribute="trailing" constant="24" id="PoF-ds-x5Q"/>
+                                    <constraint firstItem="WLb-HF-BrW" firstAttribute="trailing" secondItem="oZq-Wa-mSP" secondAttribute="trailing" id="Qzw-Ee-LhD"/>
+                                    <constraint firstItem="bC7-T3-bSu" firstAttribute="leading" secondItem="ItR-LD-53b" secondAttribute="leading" constant="24" id="STY-um-z3R"/>
+                                    <constraint firstItem="oZq-Wa-mSP" firstAttribute="top" secondItem="WLb-HF-BrW" secondAttribute="bottom" constant="24" id="VYx-yt-O2f"/>
+                                    <constraint firstItem="WLb-HF-BrW" firstAttribute="leading" secondItem="oZq-Wa-mSP" secondAttribute="leading" id="WHf-6t-bbi"/>
+                                    <constraint firstItem="oZq-Wa-mSP" firstAttribute="leading" secondItem="ItR-LD-53b" secondAttribute="leading" constant="24" id="lIX-q5-DLk"/>
+                                    <constraint firstAttribute="bottom" secondItem="bC7-T3-bSu" secondAttribute="bottom" constant="22" id="nUy-5D-aBC"/>
+                                    <constraint firstAttribute="trailing" secondItem="oZq-Wa-mSP" secondAttribute="trailing" constant="24" id="pP2-v5-bik"/>
+                                    <constraint firstItem="qMe-1i-4Xw" firstAttribute="leading" secondItem="ItR-LD-53b" secondAttribute="leading" constant="24" id="qEk-Ju-mYb"/>
+                                    <constraint firstItem="WLb-HF-BrW" firstAttribute="top" secondItem="ItR-LD-53b" secondAttribute="top" constant="24" id="z7w-MT-u4q"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validate Crypto Address" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WFZ-IA-IWk">
+                                <rect key="frame" x="35" y="43" width="343" height="156"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="43"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.97647058819999999" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.97254901960784312" green="0.97647058823529409" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ItR-LD-53b" secondAttribute="bottom" constant="16" id="1x3-ND-eWb"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3hd-t2-tZE"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="leading" secondItem="WFZ-IA-IWk" secondAttribute="trailing" constant="-378" id="4Qs-00-3P3"/>
+                            <constraint firstItem="ItR-LD-53b" firstAttribute="top" secondItem="WFZ-IA-IWk" secondAttribute="bottom" constant="48" id="4jP-Xp-NCs"/>
+                            <constraint firstItem="ItR-LD-53b" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="227" id="7DR-ip-hiX"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GLt-9F-CqY"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="leading" secondItem="WFZ-IA-IWk" secondAttribute="trailing" constant="-378" id="Ihl-Tw-X7y"/>
+                            <constraint firstItem="ItR-LD-53b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Nlu-hZ-FgD"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ZKN-f6-fG7"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bPj-lG-LUQ"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="btH-Db-M40"/>
+                            <constraint firstItem="WFZ-IA-IWk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cRq-pi-BEh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ItR-LD-53b" secondAttribute="trailing" constant="16" id="eGc-xp-LYl"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="f6p-tn-RA8"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="g8b-2z-iX5"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="pJP-3M-5Tc"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qWK-lQ-9eC"/>
+                            <constraint firstItem="ppR-cd-yYR" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="qt9-Lb-mvA"/>
+                            <constraint firstItem="WFZ-IA-IWk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="23" id="tKT-ne-43c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ppR-cd-yYR" secondAttribute="trailing" id="ufe-w1-tbf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addressField" destination="qMe-1i-4Xw" id="mdR-C8-Cnm"/>
+                        <outlet property="cryptoField" destination="WLb-HF-BrW" id="TRL-2K-02r"/>
+                        <outlet property="holderView" destination="ItR-LD-53b" id="N8c-qw-MPz"/>
+                        <outlet property="networkField" destination="oZq-Wa-mSP" id="OAa-we-fGG"/>
+                        <outlet property="validateButton" destination="bC7-T3-bSu" id="2v8-xP-yAu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.13043478260872" y="132.06521739130434"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg" width="1242" height="1104"/>
+    </resources>
+</document>
