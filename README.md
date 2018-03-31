@@ -1,5 +1,5 @@
-# swift-crypto-wallet-validator
-A crypto address validator written in swift for BTC and LTC. Based on the NPM javascript version with extra goodies.
+# swift crypto-wallet validator
+A crypto address validator written in swift for BTC and LTC. Based on the NPM javascript version with extra goodies 🍭
 
 # CryptoAddressValidator
 
@@ -9,9 +9,9 @@ A crypto address validator written in swift for BTC and LTC. Based on the NPM ja
 
 ## Getting Started
 
-* Project was built using xcode 9.
-* The validator code is under the validator group. Planning to move this out in the future to its own separate project.
-* To validate an address, call the Walletvalidator method and pass the address and network type (supports prod and testnet).
+* 🔨 Project was built using xcode 9.
+* 💳 The validator code is under the validator group. Planning to move this out in the future to its own separate project.
+* ☑️ To validate an address, call the Walletvalidator method and pass the 📭 address and 📡 network type (supports prod and testnet).
 
 ```
        do {
@@ -20,15 +20,19 @@ A crypto address validator written in swift for BTC and LTC. Based on the NPM ja
 ```
 ## Running the tests
 
-The unit tests are in the CrytoWalletValidatorTests group.
+The 🔧 unit tests are in the CrytoWalletValidatorTests group.
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the 📜 MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+
+## To do
+- [ ] Move validator code to separate project.
+- [ ] Port project to Android.
 
 ## Acknowledgments
-* Code was inspired from https://github.com/ryanralph altcoin address validator
-* Alertview was taken from https://github.com/vikmeup/SCLAlertView-Swift
-* The SHA utils were taken from https://github.com/CityOfZion/neo-swift
-* The nice animated textfield is from https://github.com/raulriera/TextFieldEffects
+* ⌨️ Code was inspired from https://github.com/ryanralph altcoin address validator
+* ℹ️ Alertview was taken from https://github.com/vikmeup/SCLAlertView-Swift
+* 🔐 The SHA utils were taken from https://github.com/CityOfZion/neo-swift
+* 🎞️ The nice animated textfield is from https://github.com/raulriera/TextFieldEffects
 
 Please let me know if I missed anyone out.
